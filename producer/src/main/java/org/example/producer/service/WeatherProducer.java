@@ -25,6 +25,6 @@ public class WeatherProducer {
 
         kafkaTemplate.send("weather-topic", weatherDto);
 
-        LOGGER.info("\nSend weather message to topic: {}\n", weatherDto.toString());
+        LOGGER.info("\nSend weather message to topic: \n{}\n", weatherDto.toString());
     }
 }

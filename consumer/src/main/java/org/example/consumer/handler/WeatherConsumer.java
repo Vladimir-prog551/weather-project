@@ -24,10 +24,10 @@ public class WeatherConsumer {
     public void handle(WeatherDto weatherDto) {
         weatherStat.addWeatherData(weatherDto);
         System.out.println("\n----------Weather----------");
-        System.out.println(weatherDto.getCity());
-        System.out.println(weatherDto.getWeatherCondition());
-        System.out.println(weatherDto.getTemperature());
-        System.out.println(weatherDto.getLocalDate());
+        System.out.println("Город: " + weatherDto.getCity());
+        System.out.println("Погода: " + weatherDto.getWeatherCondition());
+        System.out.println("Температура: " + weatherDto.getTemperature());
+        System.out.println("Дата: " + weatherDto.getLocalDate());
         System.out.println("---------------------------\n");
     }
 
