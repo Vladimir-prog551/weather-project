@@ -32,7 +32,7 @@
 
 1. Клонируйте репозиторий:
    ```
-   git clone https://github.com/ваш-репозиторий.git
+   git clone https://github.com/Vladimir-prog551/weather-project.git
    cd weather-kafka-system
    ```
 2. Запустите все сервисы через Docker Compose
