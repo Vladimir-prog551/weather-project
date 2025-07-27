@@ -39,3 +39,29 @@
    ```
    docker-compose up --build
    ```
+
+## Работа сервисов
+
+Пример работы продюсера:
+```
+producer-1  | 2025-07-27T09:16:18.571Z  INFO 1 --- [producer] [   scheduling-1]
+o.e.producer.service.WeatherProducer     :
+producer-1  | Send weather message to topic:
+producer-1  | WeatherDto(city=VLADIVOSTOK, temperature=10, weatherCondition=RAINY, localDate=2025-07-27)
+```
+Пример работы консюмера:
+```
+consumer-1  | ----------Weather----------
+consumer-1  | Город: SEVASTOPOL
+consumer-1  | Погода: CLOUDY
+consumer-1  | Температура: 6
+consumer-1  | Дата: 2025-07-27
+consumer-1  | ---------------------------
+
+consumer-1  |           Статистика
+consumer-1  | Самый жаркий день
+consumer-1  |   2025-07-27
+consumer-1  |   SEVASTOPOL
+consumer-1  |   34
+consumer-1  | Больше всего дождей в SEVASTOPOL (6 дней)
+```
